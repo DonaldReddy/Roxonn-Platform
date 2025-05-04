@@ -1,0 +1,2 @@
+ALTER TABLE "registered_repositories" ADD COLUMN "installation_id" text;--> statement-breakpoint
+ALTER TABLE "registered_repositories" ADD CONSTRAINT "registered_repositories_github_repo_id_unique" UNIQUE("github_repo_id");
