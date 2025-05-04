@@ -128,4 +128,11 @@ npx hardhat test
 Contributions are welcome! Please read our contributing guidelines for details.
 
 ## License
-This project is licensed under the MIT License.
+
+This project operates under a dual-license model:
+
+1.  **Core Functionality (AGPLv3):** The core components of the Roxonn Platform are licensed under the GNU Affero General Public License v3.0. See the [LICENSE](LICENSE) file for details. This ensures the core remains free and open-source, promoting community contribution and transparency.
+
+2.  **Enterprise Edition (Commercial):** Certain advanced features, integrations, or specific deployment scenarios may be offered under a separate commercial license. See [LICENSE_EE.md](LICENSE_EE.md) for the terms of the Enterprise Edition license.
+
+Please review the relevant license file based on your intended use case. Contributions to the core AGPLv3 codebase are subject to the terms outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
