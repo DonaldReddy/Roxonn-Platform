@@ -42,7 +42,13 @@ Please ensure you understand the implications of both licenses before contributi
 
 The CLA grants Roxonn Future Tech Pvt. Ltd. the necessary rights to manage, relicense, and distribute your contributions as part of the project, including incorporating them into commercially licensed parts (EE code) if applicable and agreed upon separately. This ensures legal clarity for both contributors and users of the Roxonn platform.
 
-*(Placeholder: Add link to the CLA signing process here - e.g., using CLA Assistant or similar tool).*
+We use **CLA Assistant** to manage our CLA signing process. When you submit your first Pull Request, the CLA Assistant bot will automatically add a comment to your PR prompting you to sign the CLA. You can sign the CLA directly within your PR by commenting:
+
+```
+I have read the CLA Document and I hereby sign the CLA
+```
+
+The CLA document is available at [CLA.md](CLA.md) in this repository.
 
 Please ensure you have signed the CLA before submitting Pull Requests.
 
