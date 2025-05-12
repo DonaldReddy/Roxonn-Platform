@@ -18,7 +18,7 @@ Please ensure you understand the implications of both licenses before contributi
 
 ## Getting Started
 
-1.  **Prerequisites:** Make sure you have Docker, Elixir, Erlang, and Node.js installed. See [README.md](README.md#getting-started) for details.
+1.  **Prerequisites:** Make sure you have Docker and Node.js installed. See [README.md](README.md#getting-started) for details on the technology stack (primarily Node.js/TypeScript, React, Solidity, PostgreSQL).
 2.  **Fork & Clone:** Fork the repository on GitHub and clone your fork locally.
 3.  **Setup:** Follow the setup instructions in the [README.md](README.md#setting-up-the-project) (copy `.env.example`, run `make postgres`, `make install`).
 4.  **Run Locally:** Start the development server using `make server`.
@@ -28,7 +28,13 @@ Please ensure you understand the implications of both licenses before contributi
 1.  **Find an Issue:** Look for issues tagged `help wanted` or `good first issue` in the GitHub repository, focusing on those related to the **AGPL Core**. We also run specific bounty programs via the Roxonn platform itself - check `app.roxonn.com` (link TBD) for active bounties (most public bounties will target the AGPL core).
 2.  **Focus on AGPL Core:** Public contributions via Pull Requests should target the AGPL-licensed parts of the codebase.
 3.  **Discuss:** If you plan to work on a significant change (even to AGPL code), please discuss it first by commenting on the relevant GitHub issue or creating a new one. For interest in EE features, contact us directly.
-4.  **Develop:** Create a new branch for your changes (`git checkout -b feature/your-feature-name`). Make your code changes, adhering to the project's coding style (details TBD - add linter/formatter info here).
+4.  **Develop:** Create a new branch for your changes (`git checkout -b feature/your-feature-name`). Make your code changes.
+    *   **Coding Style & Linting:**
+        *   We use **Prettier** for automatic code formatting. Please format your code before committing.
+        *   **ESLint** is used for linting TypeScript/JavaScript code in the `client/` and `server/` directories.
+        *   **Solhint** (typically integrated with Hardhat) is used for linting Solidity code in the `contracts/` directory.
+        *   Please ensure your contributions pass all linter checks. Configuration files for these tools may be found in `package.json` or within specific project directories (e.g., `client/`, `server/`).
+        *   We recommend installing editor extensions for Prettier and ESLint to get real-time feedback (e.g., "Prettier - Code formatter" and "ESLint" for VS Code).
 5.  **Test:** Add relevant unit or integration tests for your changes. Ensure all tests pass (`npm run test`, `npx hardhat test`).
 6.  **Submit Pull Request:** Push your branch to your fork and open a Pull Request against the main Roxonn repository.
     *   Clearly describe the changes you made and link the relevant GitHub issue(s).
@@ -54,7 +60,7 @@ Please ensure you have signed the CLA before submitting Pull Requests.
 
 ## Code of Conduct
 
-Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms. (Placeholder: Add a CODE_OF_CONDUCT.md file).
+Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## Questions?
 
